@@ -1,0 +1,16 @@
+$primary-color: #fff100;
+$secondary-color: #542e90;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+}
+
+* {
+  transition: all 0.15s ease;
+}

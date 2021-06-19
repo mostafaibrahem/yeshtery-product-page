@@ -1,0 +1,31 @@
+.main__header--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 84px;
+    @include mq('tablet-small'){
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 168px;
+    }
+    .adidas-logo{
+        height: 56.7px;
+        width: 85.3px;
+    }
+    .ant-input{
+       width: 350px;
+       background-image: url('../../images/search-icon.svg');
+       background-position: left center;
+       background-repeat: no-repeat;
+       padding-left: 30px;
+       &::placeholder{
+           color: black;
+           font-weight: bold;
+       }
+    }
+    li{
+        .word-span{
+            margin: 0px 10px;
+        }
+    }
+}

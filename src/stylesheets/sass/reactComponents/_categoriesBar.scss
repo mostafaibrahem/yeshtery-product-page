@@ -1,0 +1,21 @@
+.categories__bar--wrapper{
+    background-color: black;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include mq('tablet-small'){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    span{
+        color: #fff;
+        font-weight: bold;
+        margin: 0px 20px;
+        cursor: pointer;
+        &:last-of-type{
+            color: #F11133;
+        }
+    }
+}
+

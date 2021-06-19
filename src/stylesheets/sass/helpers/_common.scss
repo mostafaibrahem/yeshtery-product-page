@@ -1,0 +1,126 @@
+//a tags
+a {
+   &:link {
+      text-decoration: none;
+   }
+   &:hover {
+      text-decoration: underline;
+   }
+}
+
+//ul tags
+ul {
+   list-style-type: none;
+   margin: 0px 10px;
+   padding: 0;
+   display: flex;
+   li {
+      margin: 0px 10px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+   }
+}
+
+.container {
+   padding: 0px 100px;
+   @include mq("desktop-wide-xlg") {
+      padding: 0px 400px;
+   }
+   @include mq("desktop-wide-lg") {
+      padding: 0px 300px;
+   }
+   @include mq("desktop-wide") {
+      padding: 0px 200px;
+   }
+   @include mq("desktop-1") {
+      padding: 0px 100px;
+   }
+
+   @include mq("tablet-qc") {
+      padding: 0px 20px;
+   }
+   @include mq("tablet-small") {
+      padding: 0px 5px;
+   }
+}
+
+.boldest {
+   font-weight: 800;
+}
+
+.bolder {
+   font-weight: 600;
+}
+
+.bold {
+   font-weight: 500;
+}
+
+.color-secondary {
+   color: var(--secondary-color);
+}
+
+.color-light-gray {
+   color: #a7a9ac;
+}
+.color-medium-gray {
+   color: #575756;
+}
+
+.line-through {
+   text-decoration: line-through;
+}
+.fill-primary {
+   background-color: var(--primary-color);
+}
+.fill-secondary {
+   background-color: var(--secondary-color);
+}
+.ant-rate {
+   .ant-rate-star {
+      margin: 0px;
+   }
+}
+.space-between {
+   display: flex;
+   justify-content: space-between;
+}
+.justify-center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.slick-dots {
+   position: unset;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   li {
+      width: 70px;
+      height: 70px;
+   }
+   img {
+      width: 70px;
+   }
+}
+.ant-btn {
+   &:hover {
+      background-color: violet;
+         color: black;
+      } 
+
+      &:focus {
+         background-color: violet ;
+         color: black;
+
+      }
+      &:active {
+         background-color: violet ;
+         color: black;
+
+      }
+      
+   }
+

@@ -1,0 +1,19 @@
+ .similar__products--wrapper{
+     .header-wrapper{
+        h2{
+            color: var(--secondary-color);
+            font-weight: bolder;
+            font-size: 28px;
+        }
+        p{
+            font-size: 22px;
+            color: #575756;
+        }
+     }
+     .products-wrapper{
+         display: flex;
+         overflow-x: auto;
+         
+     }
+    
+ }

@@ -1,0 +1,77 @@
+.app__footer--wrapper {
+    background-color: #3c3c3b;
+    color: white;
+    .top-part {
+        display: flex;
+        padding-top: 50px;
+        @include mq("tablet-qc") {
+            flex-direction: column;
+        }
+
+        .logo_side {
+            img{
+                margin-bottom: 30px;
+            }
+            width: 50%;
+            padding: 10px 20px;
+            border-right: 0.5px solid gray;
+            @include mq("tablet-qc") {
+                width: 100%;
+                border-bottom: 0.5px solid gray;
+                border-right: unset;
+            }
+        }
+        .subscribe_side {
+            width: 50%;
+            padding: 10px 20px;
+            @include mq("tablet-qc") {
+                width: 100%;
+            }
+        }
+        .site-map {
+            display: flex;
+            justify-content: space-between;
+            .links,
+            .social-media {
+                width: 50%;
+                ul {
+                    display: unset;
+                    li{
+                        margin: 15px 10px;
+                    }
+                }
+            }
+            .social-media {
+                ul {
+                    li {
+                        img {
+                            margin: 2px 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mq("tablet-qc") {
+            flex-direction: column;
+        }
+        .payment-methods-powered-by {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            @include mq("tablet-qc") {
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+            }
+            img {
+                margin: 0px 10px;
+            }
+        }
+    }
+}

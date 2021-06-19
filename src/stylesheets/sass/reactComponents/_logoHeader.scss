@@ -1,0 +1,26 @@
+.logo__header--wrapper{
+    background-color:  var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    @include mq('tablet-small'){
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 96px;
+    }
+    .valentine-span{
+        @include mq('desktop'){
+            display: none;
+        }
+    }
+    ul{
+        li{
+            @include mq('tablet-small'){
+                margin: 0px 5px;
+                font-size: 12px;
+            }
+        }
+        
+    }
+}
